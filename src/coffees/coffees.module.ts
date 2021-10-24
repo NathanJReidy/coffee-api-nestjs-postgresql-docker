@@ -9,6 +9,16 @@ import { Flavor } from './entities/flavor.entity';
 @Module({
   imports: [TypeOrmModule.forFeature([Coffee, Flavor, Event])],
   controllers: [CoffeesController],
+  // providers: [
+  //   {
+  //     provide: CoffeesService,
+  //     useClass: CoffeesService,
+  //   },
+  // ],
+  // This is the long syntax if
+  // provide and useClass are different. If they are the same, we
+  // can use the shorthand syntax as per the below.
   providers: [CoffeesService],
+  exports: [CoffeesService],
 })
 export class CoffeesModule {}
