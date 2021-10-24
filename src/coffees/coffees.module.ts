@@ -6,6 +6,8 @@ import { CoffeesService } from './coffees.service';
 import { Coffee } from './entities/coffee.entity';
 import { Flavor } from './entities/flavor.entity';
 
+class MockCoffeesService {}
+
 @Module({
   imports: [TypeOrmModule.forFeature([Coffee, Flavor, Event])],
   controllers: [CoffeesController],
@@ -18,7 +20,8 @@ import { Flavor } from './entities/flavor.entity';
   // This is the long syntax if
   // provide and useClass are different. If they are the same, we
   // can use the shorthand syntax as per the below.
-  providers: [CoffeesService],
+  // providers: [CoffeesService],
+  providers: [{ provide: CoffeesService, useValue: new MockCoffeesService() }],
   exports: [CoffeesService],
 })
 export class CoffeesModule {}
