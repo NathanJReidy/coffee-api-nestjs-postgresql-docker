@@ -17,7 +17,7 @@ import { DatabaseModule } from './database/database.module';
       password: 'pass123',
       database: 'postgres',
       autoLoadEntities: true,
-      synchronize: false,
+      synchronize: true,
     }),
     CoffeeRatingModule,
     DatabaseModule,
