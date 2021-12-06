@@ -87,7 +87,7 @@ $ docker exec -t <your-postgres-container-id> pg_dumpall -c -U postgres > postgr
 $ cat your_dump.sql | docker exec -i <your-postgres-container-id> psql -U myuser
 
 // In this application:
-$ cat postgres-backups/your_dump.sql | docker exec -i <your-postgres-container-id> psql -U myuser
+$ cat postgres-backups/your_dump.sql | docker exec -i <your-postgres-container-id> psql -U postgres
 
 ```
 
