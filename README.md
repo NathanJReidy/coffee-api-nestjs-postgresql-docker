@@ -64,7 +64,7 @@ $ npm run test:cov
 ```
 $ docker-compose up
 $ npm run start:dev
-// Then follow the below instructions to restore data from a PostgreSQL backup
+// Then follow the below instructions to restore data from a PostgreSQL backup if test data is needed
 ```
 
 ## How to Backup PostgreSQL Data
