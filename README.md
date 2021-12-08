@@ -64,7 +64,12 @@ $ npm run test:cov
 ```
 $ docker-compose up
 $ npm run start:dev
-// Then follow the below instructions to restore data from a PostgreSQL backup if test data is needed
+
+After running locally, requests can be made to http://localhost:3000
+
+To view all endpoints, please visit http://localhost:3000/api
+
+Follow the below instructions to restore data from a PostgreSQL backup if test data is needed.
 ```
 
 ## How to Backup PostgreSQL Data
