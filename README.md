@@ -92,6 +92,6 @@ $ docker volume prune // delete all volumes
 $ docker container prune // delete all containers
 $ docker volume ls // view all volumes
 $ docker container ls // view all containers
-$ docker-compose up
-$ docker-compose down
+$ docker compose up -d // starts containers and leaves them running in the background
+$ docker compose down // stop and remove containers, networks
 ```
