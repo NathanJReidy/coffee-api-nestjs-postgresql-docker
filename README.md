@@ -59,7 +59,7 @@ To view all endpoints, please visit http://localhost:3000/api
 Follow the below instructions to restore data from a PostgreSQL backup if test data is needed.
 ```
 
-![View][./images/swagger-api.png]
+![View](./images/swagger-api.png)
 
 ## How to Backup PostgreSQL Data
 
