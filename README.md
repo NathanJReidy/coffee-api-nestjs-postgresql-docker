@@ -8,7 +8,7 @@ A coffee API which uses NestJS, PostgreSQL and Docker. In the section_2 branch, 
 $ npm install
 ```
 
-## Comamnds for Running the app
+## Commands for Running the app
 
 ```bash
 # development
@@ -58,6 +58,8 @@ To view all endpoints, please visit http://localhost:3000/api
 
 Follow the below instructions to restore data from a PostgreSQL backup if test data is needed.
 ```
+
+![View][./images/swagger-api.png]
 
 ## How to Backup PostgreSQL Data
 
